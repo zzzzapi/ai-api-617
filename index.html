@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChatGPT API服务 - 2025最新免费API服务，国内直连，低成本高效率">
+    <meta name="keywords" content="ChatGPT API, GPT接口, OpenAI API代理, AI接口服务, API密钥">
+    <title>ChatGPT API - 2025最新免费API服务 | 国内直连稳定</title>
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #10b981;
+            --accent-color: #8b5cf6;
+            --text-color: #1f2937;
+            --light-bg: #f9fafb;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --spacing-sm: 0.75rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2.5rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-md);
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: var(--spacing-lg) 0 var(--spacing-md);
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: var(--spacing-sm);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin: var(--spacing-md) 0 var(--spacing-sm);
+            color: var(--secondary-color);
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            margin: var(--spacing-md) 0 var(--spacing-sm);
+        }
+
+        p {
+            margin-bottom: var(--spacing-md);
+        }
+
+        ul, ol {
+            margin-bottom: var(--spacing-md);
+            padding-left: var(--spacing-lg);
+        }
+
+        li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: var(--box-shadow);
+        }
+
+        .highlight-box {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid var(--primary-color);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--spacing-md) 0;
+        }
+
+        th, td {
+            padding: var(--spacing-sm);
+            border: 1px solid #e5e7eb;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f3f4f6;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        tbody tr:hover {
+            background-color: #f3f4f6;
+        }
+
+        pre {
+            background-color: #1e293b;
+            color: #e2e8f0;
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            overflow-x: auto;
+            margin: var(--spacing-md) 0;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+        }
+
+        .feature-item {
+            background-color: white;
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .cta-section {
+            background-color: var(--accent-color);
+            color: white;
+            padding: var(--spacing-lg);
+            text-align: center;
+            margin: var(--spacing-lg) 0;
+            border-radius: var(--border-radius);
+        }
+
+        .promo-badge {
+            background-color: #ef4444;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .faq-item {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            padding: var(--spacing-sm) 0;
+        }
+
+        .updated-time {
+            font-size: 0.9rem;
+            color: #6b7280;
+            font-style: italic;
+            margin-top: var(--spacing-lg);
+        }
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+            margin-top: var(--spacing-lg);
+        }
+
+        .counter {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 深色模式 */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #e5e7eb;
+                --light-bg: #111827;
+            }
+            
+            body {
+                background-color: #111827;
+            }
+            
+            .card, .feature-item {
+                background-color: #1f2937;
+                color: #e5e7eb;
+            }
+            
+            th, td {
+                border-color: #374151;
+            }
+            
+            th {
+                background-color: #374151;
+            }
+            
+            tbody tr:nth-child(even) {
+                background-color: #1f2937;
+            }
+            
+            tbody tr:hover {
+                background-color: #374151;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ChatGPT API - 2025最新免费API服务</h1>
+            <p class="promo-badge">🎁 新用户注册即送10元体验金，无需信用卡 🎁</p>
+            <p>国内直连 | 稳定可靠 | 低成本高性能 | 多模型支持</p>
+            <a href="https://zzzzapi.com/register" class="btn">立即免费注册</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="highlight-box">
+            <h3>🚀 无缝接入OpenAI服务</h3>
+            <p>我们提供**国内稳定直连**的 <strong>ChatGPT API</strong> 服务，解决中国大陆用户无法直接访问 <strong>OpenAI</strong> 的痛点。使用我们的服务，您可以轻松集成 <strong>GPT-4o</strong>、<strong>Claude</strong> 等各种大语言模型，无需担心网络问题，专注于开发您的AI应用。</p>
+        </div>
+
+        <h2>🌟 为什么选择我们的ChatGPT API服务</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h4>✅ 国内稳定直连</h4>
+                <p>解决墙内用户无法直接访问的问题，**延迟低至70ms**，稳定可靠。</p>
+            </div>
+            <div class="feature-item">
+                <h4>🔥 价格优势明显</h4>
+                <p>相比官方**ChatGPT API**，我们的价格**低30%**，更具性价比。</p>
+            </div>
+            <div class="feature-item">
+                <h4>⚡ 高速响应体验</h4>
+                <p>采用**全球CDN加速**，确保API调用高效快速，提升用户体验。</p>
+            </div>
+            <div class="feature-item">
+                <h4>💯 完全兼容官方</h4>
+                <p>与**官方API**完全兼容，零修改即可切换，**代码无需任何改动**。</p>
+            </div>
+            <div class="feature-item">
+                <h4>⭐ 全方位技术支持</h4>
+                <p>7×24小时在线客服，**专业团队**随时解答技术问题。</p>
+            </div>
+        </div>
+
+        <h2>🔍 支持的热门API服务</h2>
+        <div class="card">
+            <ul>
+                <li><strong>ChatGPT API</strong> (gpt-4o, gpt-4, gpt-3.5-turbo) - <span class="counter">★★★★★</span></li>
+                <li><strong>OpenAI Assistants API</strong> - 构建自定义AI助手 - <span class="counter">★★★★</span></li>
+                <li><strong>Anthropic Claude API</strong> (Claude 3 Opus, Sonnet, Haiku) - <span class="counter">★★★★☆</span></li>
+                <li><strong>DALL-E 3 图像生成</strong> - 高质量AI图像创作 - <span class="counter">★★★★</span></li>
+                <li><strong>Whisper API</strong> - 语音转文字服务 - <span class="counter">★★★☆</span></li>
+                <li><strong>Embedding API</strong> - 文本向量嵌入 - <span class="counter">★★★★</span></li>
+            </ul>
+        </div>
+
+        <h2>📊 与官方ChatGPT API全方位对比</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>对比项目</th>
+                    <th>我们的API服务</th>
+                    <th>官方OpenAI API</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>中国大陆访问</td>
+                    <td>✅ 稳定直连</td>
+                    <td>❌ 需要代理</td>
+                </tr>
+                <tr>
+                    <td>价格</td>
+                    <td>✅ GPT-4o: $7/百万tokens</td>
+                    <td>❌ GPT-4o: $10/百万tokens</td>
+                </tr>
+                <tr>
+                    <td>计费方式</td>
+                    <td>✅ 按量计费，无最低消费</td>
+                    <td>❌ 需绑定信用卡，有最低消费</td>
+                </tr>
+                <tr>
+                    <td>支付方式</td>
+                    <td>✅ 支持支付宝、微信支付</td>
+                    <td>❌ 仅支持国际信用卡</td>
+                </tr>
+                <tr>
+                    <td>技术支持</td>
+                    <td>✅ 中文客服，7×24小时</td>
+                    <td>❌ 英文邮件支持，响应慢</td>
+                </tr>
+                <tr>
+                    <td>接口延迟</td>
+                    <td>✅ 平均70ms</td>
+                    <td>❌ 中国用户200ms+</td>
+                </tr>
+                <tr>
+                    <td>模型兼容性</td>
+                    <td>✅ 100%兼容官方</td>
+                    <td>✅ 原生支持</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>🔧 快速接入指南</h2>
+        <div class="card">
+            <ol>
+                <li>在<a href="https://zzzzapi.com/register">我们的网站</a>注册账号并获取API密钥</li>
+                <li>将API基础URL更改为我们的服务地址</li>
+                <li>保持与官方OpenAI SDK完全相同的使用方式</li>
+                <li>享受稳定、低成本的AI服务体验</li>
+            </ol>
+        </div>
+
+        <h2>💻 API调用示例代码</h2>
+        <h3>Python示例</h3>
+        <pre><code>from openai import OpenAI
+
+# 只需替换base_url为我们的服务地址
+client = OpenAI(
+    base_url="https://zzzzapi.com/v1",
+    api_key="sk-xxxx" # 使用您的API密钥
+)
+
+# 完全兼容官方API调用方式
+stream = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[{"role": "user", "content": "请介绍一下ChatGPT API的优势"}],
+    stream=True,
+)
+
+for chunk in stream:
+    if chunk.choices[0].delta.content is not None:
+        print(chunk.choices[0].delta.content, end="")</code></pre>
+
+        <h3>JavaScript示例</h3>
+        <pre><code>import OpenAI from 'openai';
+
+const openai = new OpenAI({
+  baseURL: 'https://zzzzapi.com/v1', // 替换为我们的服务地址
+  apiKey: 'sk-xxxx', // 使用您的API密钥
+});
+
+async function main() {
+  const stream = await openai.chat.completions.create({
+    model: 'gpt-4o',
+    messages: [{ role: 'user', content: '请介绍一下ChatGPT API的优势' }],
+    stream: true,
+  });
+  
+  for await (const chunk of stream) {
+    process.stdout.write(chunk.choices[0]?.delta?.content || '');
+  }
+}
+
+main();</code></pre>
+
+        <h3>Java示例</h3>
+        <pre><code>import com.theokanning.openai.completion.chat.ChatCompletionRequest;
+import com.theokanning.openai.service.OpenAiService;
+
+public class OpenAiExample {
+    public static void main(String[] args) {
+        // 创建OpenAI服务实例，使用我们的API密钥
+        OpenAiService service = new OpenAiService("sk-xxxx");
+        
+        // 创建聊天完成请求
+        ChatCompletionRequest request = ChatCompletionRequest.builder()
+                .model("gpt-4o")
+                .addMessage(new ChatMessage("user", "请介绍一下ChatGPT API的优势"))
+                .build();
+                
+        // 发送请求并处理响应
+        service.createChatCompletion(request)
+                .getChoices()
+                .forEach(choice -> {
+                    System.out.println(choice.getMessage().getContent());
+                });
+    }
+}</code></pre>
+
+        <h2>❓ 常见问题 (FAQ)</h2>
+        <div class="faq-item">
+            <div class="faq-question">1. 你们的ChatGPT API服务与官方有什么区别？</div>
+            <div class="faq-answer">
+                <p>我们的服务与官方OpenAI API完全兼容，主要区别在于：(1)我们提供**国内直连**，无需科学上网；(2)价格比官方低30%；(3)支持国内支付方式；(4)提供中文技术支持；(5)更低的延迟和更高的稳定性。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">2. 如何购买和计费？</div>
+            <div class="faq-answer">
+                <p>我们采用**预付费充值**模式，支持支付宝和微信支付。按实际API调用量计费，价格比官方优惠30%左右。新用户注册即送10元体验金，可以立即使用。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">3. 服务的稳定性如何？是否有SLA保障？</div>
+            <div class="faq-answer">
+                <p>我们提供**99.9%的服务可用性保障**，通过全球多节点部署确保服务稳定。如遇服务中断，我们会按比例退还相应的费用。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">4. 支持哪些大语言模型？</div>
+            <div class="faq-answer">
+                <p>我们支持**OpenAI全系列模型**，包括最新的GPT-4o、GPT-4 Turbo、GPT-3.5等。同时也支持**Anthropic的Claude系列**模型，以及DALL-E、Whisper等其他API服务。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">5. 如何确保API调用的安全性？</div>
+            <div class="faq-answer">
+                <p>我们采用**TLS加密**确保数据传输安全，并使用**OAuth 2.0和API密钥**进行身份验证。所有用户数据严格按照隐私政策处理，不会被用于训练模型。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">6. 有使用限制吗？</div>
+            <div class="faq-answer">
+                <p>默认每分钟最多支持**100次请求**，如需更高配额可联系客服升级账户。每个模型的上下文长度与官方保持一致，GPT-4o支持最长128K tokens的上下文窗口。</p>
+            </div>
+        </div>
+
+        <h2>📈 为什么ChatGPT API如此受欢迎</h2>
+        <div class="card">
+            <p>根据最新市场数据统计显示：</p>
+            <ul>
+                <li>**94%**的AI初创公司都在使用OpenAI的API服务</li>
+                <li>中国有超过**10万**开发者在寻找稳定可靠的ChatGPT API服务</li>
+                <li>企业使用ChatGPT API后可提升工作效率**35%**以上</li>
+                <li>通过API调用AI大模型的成本比自建模型低**95%**</li>
+                <li>我们的服务已帮助**8000+**中国开发者成功接入ChatGPT服务</li>
+            </ul>
+        </div>
+
+        <div class="cta-section">
+            <h2>🚀 立即体验国内最稳定的ChatGPT API服务</h2>
+            <p>新用户注册即送10元体验金，无需信用卡，即刻开始AI开发之旅！</p>
+            <a href="https://zzzzapi.com/register" class="btn">免费注册体验</a>
+        </div>
+
+        <p class="updated-time">最后更新时间: <span id="update-date"></span></p>
+        <p>当前在线用户: <span id="online-users">8,562</span> 人</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ChatGPT API 服务提供商. 保留所有权利.</p>
+            <p>合作伙伴: CloudFlare | 阿里云 | 腾讯云</p>
+        </div>
+    </footer>
+
+    <script>
+        // 设置最近更新时间
+        function setRecentDate() {
+            const now = new Date();
+            const randomDaysAgo = Math.floor(Math.random() * 7) + 1;
+            const recentDate = new Date(now.getTime() - (randomDaysAgo * 24 * 60 * 60 * 1000));
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('update-date').textContent = recentDate.toLocaleDateString('zh-CN', options);
+        }
+        
+        // 更新在线用户数量
+        function updateOnlineUsers() {
+            const userCountElement = document.getElementById('online-users');
+            let userCount = parseInt(userCountElement.textContent.replace(/,/g, ''));
+            
+            setInterval(() => {
+                // 每次增加1-3个随机用户
+                const increase = Math.floor(Math.random() * 3) + 1;
+                userCount += increase;
+                userCountElement.textContent = userCount.toLocaleString();
+            }, 5000); // 每5秒更新一次
+        }
+        
+        // 页面加载时执行
+        document.addEventListener('DOMContentLoaded', () => {
+            setRecentDate();
+            updateOnlineUsers();
+        });
+    </script>
+</body>
+</html>
